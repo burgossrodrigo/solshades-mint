@@ -1,0 +1,1 @@
+for i in {0..20}; do cp 0.json solshades/$i.json; jq '.name = .name + " #'$i'" | .image = "'$i'.png" | .properties.files[0].uri = "'$i'.png"' solshades/$i.json > tmp.$$.json && mv tmp.$$.json solshades/$i.json; done
