@@ -19,10 +19,10 @@ const Home: NextPage = () => {
       }}
     >
       <Head>
-        <title>Solana Candy Minter</title>
+        <title>Sol Shades Minting Page</title>
         <meta
           name="description"
-          content="Mint NFTs from a candy machine on Solana blockchain"
+          content="Solshades official minting page! Get your unique NFT now!"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -66,10 +66,11 @@ const Home: NextPage = () => {
               marginBottom: "6.4rem",
             }}
           >
-            <h1>A Mighty Solana NFT Project</h1>
+            <h1>Solshades</h1>
             <p>
-              Mint your own unique NFT from our limited collecton now! Also,
-              read more about our project <a href="#">here</a>
+              The first wearable NFT on the Solana Blockchain. 7 Style, 350 1/1
+              shades per style, 2,450 total shades. Read more about the project{" "}
+              <a href="#">here</a>
             </p>
           </header>
           <hr
