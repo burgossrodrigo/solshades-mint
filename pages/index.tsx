@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
 
           <Container>
-            <Grid container style={{alignItems: "center", justifyContent: "center"}}>
+            <Grid container style={{alignItems: "center", justifyContent: "center", marginTop: '5vh'}}>
               <Grid item>
                 <a href="#">
                   <img width={45} height={45} src="/images/logo.png" />
