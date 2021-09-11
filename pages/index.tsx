@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
               <img src="https://ipfs.io/ipfs/QmUqqjS927cyraYfeZbhfKhL9bZ8RLUkR1qksTsPufekiF" width={500} height={500} />
-                  <Typography variant="h4">The first wearable NFT on the Solana Blockchain.</Typography>
+                  <Typography variant="h4">Add them to your avatars, profiles, other pieces in your collection, or anywhere else! </Typography>
             </Grid>            
           </Grid>  
         </Container>
