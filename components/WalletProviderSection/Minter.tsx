@@ -5,6 +5,7 @@ import { LAMPORTS_PER_SOL } from "@solana/web3.js"
 import React from "react"
 import { Button, Flex, Spinner, Text } from "theme-ui"
 import Countdown from "react-countdown"
+import { Typography } from "@material-ui/core"
 
 import useCandyMachine from "../../hooks/useCandyMachine"
 import useMinter from "../../hooks/useMinter"
@@ -35,34 +36,34 @@ const MintButton = (props: Props) => {
           justifyContent: "space-between",
         }}
       >
-        <h2>Mint it</h2>
+        <Typography variant="h4">Mint it</Typography>
         <WalletMultiButton />
       </Flex>
       <Flex sx={{ flexDirection: "column" }}>
-        <p>
+        <Typography variant="h5">
           Candy machine address:{" "}
-          <small>{process.env.NEXT_PUBLIC_CANDY_MACHINE_ADDRESS}</small>
-        </p>
+          <Typography>{process.env.NEXT_PUBLIC_CANDY_MACHINE_ADDRESS}</Typography>
+        </Typography>
         {wallet.publicKey ? (
-          <p>
-            Wallet address: <small>{wallet.publicKey.toString()}</small>
-          </p>
+          <Typography variant="h6">
+            Wallet address: <Typography>{wallet.publicKey.toString()}</Typography>
+          </Typography>
         ) : null}
         <p>
           Network:{" "}
-          <small>
+          <Typography variant="h6">
             {process.env.NEXT_PUBLIC_CONNECTION_NETWORK}&nbsp;
             {`https://api.${process.env.NEXT_PUBLIC_CONNECTION_NETWORK}.solana.com/`}
-          </small>
+          </Typography>
         </p>
         <br />
         <p>
           Go live date:{" "}
-          <small>{goLiveDate ? goLiveDate.toLocaleString() : "Not set"} </small>
+          <Typography variant="h6">{goLiveDate ? goLiveDate.toLocaleString() : "Not set"} </Typography>
         </p>
         <p>
           Countdown:{" "}
-          <small>
+          <Typography variant="h6">
             {goLiveDate && isMintingReady ? (
               "Minting started already!"
             ) : goLiveDate ? (
@@ -70,7 +71,7 @@ const MintButton = (props: Props) => {
             ) : (
               "Live date not set"
             )}
-          </small>
+          </Typography>
         </p>
       </Flex>
       <Flex
@@ -103,13 +104,13 @@ const MintButton = (props: Props) => {
             : "Connect your wallet first"}
         </Button>
         {candyMachine?.data?.price ? (
-          <small>
+          <Typography variant="h6">
             Mint price:{" "}
             {candyMachine?.data?.price?.toNumber() / LAMPORTS_PER_SOL} SOL
-          </small>
+          </Typography>
         ) : null}
         {itemsRemaining ? (
-          <small>{itemsRemaining} mints remaining</small>
+          <Typography variant="h6">{itemsRemaining} mints remaining</Typography>
         ) : null}
       </Flex>
       <Flex
@@ -120,7 +121,7 @@ const MintButton = (props: Props) => {
       >
         {logs.map((log, i) => (
           <Text className="log" key={i}>
-            <small>info</small>{" "}
+            <Typography variant="h6">info</Typography>{" "}
             <Text dangerouslySetInnerHTML={{ __html: log }} />
           </Text>
         ))}
