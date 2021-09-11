@@ -43,11 +43,11 @@ const Home: NextPage = () => {
               <img src="https://ipfs.io/ipfs/QmUQbKp97qc1mcfEMdAPU5fVtsdPZrygHTgoGMvbtxqw1B" width={500} height={500} />
                   <Typography variant="h4">The first wearable NFT on the Solana Blockchain.</Typography>
             </Grid>
-            <Grid item xs={3} sm={6} md={12} lg={3} xl={3}>
+            <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
               <img src="https://ipfs.io/ipfs/QmXcH4UFHE7Vzyv4cnPFUvP3biQtyfMpwbadMaSTQ4JDqH" width={500} height={500} />
               <Typography variant="h4"> 7 Style. 350 1/1 shades per style. 2,450 total shade.</Typography>
             </Grid>
-            <Grid item xs={3} sm={6} md={12} lg={3} xl={3}>
+            <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
               <img src="https://ipfs.io/ipfs/QmUqqjS927cyraYfeZbhfKhL9bZ8RLUkR1qksTsPufekiF" width={500} height={500} />
                   <Typography variant="h4">The first wearable NFT on the Solana Blockchain.</Typography>
             </Grid>            
